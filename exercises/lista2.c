@@ -22,7 +22,15 @@ void copyVet(int list1[], int list2[], int length) {
 }
 
 void inverte(int list[], int len) {
+    int *ptr1 = list;
+    int aux = 0;
     
+    
+
+    for(int i = 0; i < len; i++) {
+
+    }
+
 }
 
 

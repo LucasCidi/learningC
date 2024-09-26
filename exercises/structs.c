@@ -31,6 +31,6 @@ int main()
 
     Fracao f2 = {18, 3};
     Fracao f3 = multiplica(&f1,&f2);
-    printf(calculaRef(&f3));
+    //printf(calculaRef(&f3));
     
 }
