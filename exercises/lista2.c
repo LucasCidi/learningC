@@ -22,15 +22,18 @@ void copyVet(int list1[], int list2[], int length) {
 }
 
 void inverte(int list[], int len) {
-    int *ptr1 = list;
+    int *p = list;
     int aux = 0;
-    
-    
+    int *p2 = list;
+    p2 += len - 1;
 
-    for(int i = 0; i < len; i++) {
-
+    while(p < p2) {
+        aux = *p;
+        *p = *p2;
+        *p2 = aux;
+        p++;
+        p2--;
     }
-
 }
 
 
@@ -41,8 +44,10 @@ int main() {
 
     int len = sizeof(list1)/sizeof(list1[0]);
 
-    int position = index(list1, len, 9);
-    copyVet(list1, list2, len);
+    //int position = index(list1, len, 9);
+    //copyVet(list1, list2, len);
+
+    inverte(list2, len);
 
     for(int i = 0; i < len; i++) {
         printf("%d", list2[i]);
